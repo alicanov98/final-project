@@ -1,0 +1,591 @@
+.allPage {
+  margin: 0 auto;
+  margin-top: 96px;
+  //   START HEADER
+  .header {
+    background: #fff;
+    height: 90px;
+    box-shadow: 0px 7px 11px -6px rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgb(81, 136, 238);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+    .container {
+      .content {
+        width: 100%;
+        .clickNavBars {
+          display: flex;
+          justify-content: space-between;
+          gap: 35px;
+          .logo {
+            span {
+              a {
+                color: rgb(81, 136, 238);
+                font-family: "Poppins", sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.5;
+              }
+            }
+          }
+          .navBar {
+            display: flex;
+            z-index: 0;
+            .navList {
+              gap: 35px;
+              display: flex;
+              .navItem {
+                a {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 18px;
+                  color: rgb(81, 136, 238);
+                  transition: all 0.9s ease;
+                  &:hover {
+                    color: #00cc99;
+                  }
+                }
+              }
+            }
+          }
+          .clickNavBtn {
+            cursor: pointer;
+            display: none;
+            i {
+              font-size: 24px;
+              line-height: 1.1;
+              color: rgb(81, 136, 238);
+              transition: all 0.9s ease;
+              &:hover {
+                color: #00cc99;
+              }
+            }
+            .fa-xmark {
+              color: rgb(81, 136, 238);
+              transition: all 0.9s ease;
+              &:hover {
+                color: #00cc99;
+              }
+            }
+          }
+          .active {
+            display: block;
+            opacity: 1 !important;
+            visibility: visible !important;
+          }
+        }
+        .clickDropdown {
+          i {
+            color: rgb(81, 136, 238);
+            font-size: 24px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  //   END HEADER
+  //  // ---------------
+  // START MAIN
+  main {
+    //// ----------------
+    // START ABOUT ME SECTION
+    .aboutMe {
+      background-image: url(../image/fon.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 600px;
+      .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        .aboutLeft {
+          h3 {
+            color: rgb(81, 136, 238);
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+          }
+          h1 {
+            font-family: "Poppins", sans-serif;
+            color: rgb(81, 136, 238);
+            margin: 20px 0;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 60px;
+          }
+          h5 {
+            color: rgb(81, 136, 238);
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+          }
+          .socialIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+            gap: 15px;
+            a {
+              font-size: 20px;
+              transition: all 0.9s ease;
+              color: rgb(81, 136, 238);
+              transition: all 0.4s ease;
+              &:hover {
+                background: linear-gradient(90deg, #6600ff 0%, #00cc99 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+          .aboutBtn {
+            display: inline-block;
+            background: linear-gradient(
+              to right,
+              #1345e6 0%,
+              #ed239f 51%,
+              #1345e6 100%
+            );
+            color: #fff;
+            letter-spacing: 0px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 50px;
+            padding: 0 38px;
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 5px;
+            background-size: 200% auto;
+            transition: all 0.6s ease-in-out;
+            &:hover {
+              background-position: right center;
+              color: #fff;
+            }
+          }
+        }
+        .aboutRight {
+          margin-top: 120px;
+          margin-left: 100px;
+
+          img {
+            width: 300px;
+            height: 300px;
+            border-radius: 35px;
+          }
+        }
+      }
+    }
+    // END ABOUT ME SECTION
+    ////----------------
+    /// Slide Swiper Section START
+    .swiperSlide {
+      .swiperContent {
+        background-color: #fff;
+        padding-bottom: 30px;
+        .container {
+          .title {
+            text-align: center;
+            padding: 100px 0;
+
+            h2 {
+              font-family: "Poppins", sans-serif;
+              color: rgb(81, 136, 238);
+              font-size: 40px;
+              font-weight: 500;
+              line-height: 60px;
+            }
+          }
+          .mySwiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-image: url(../image/banner.png.webp);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            .swiper-wrapper {
+              .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+                .cartContent {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  text-align: center;
+                  p {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    margin: 34px 0;
+                    font-family: "Poppins", sans-serif;
+                  }
+                  .author {
+                    h3 {
+                      font-family: "Poppins", sans-serif;
+                      color: #fff;
+                      margin: 0 0 5px;
+                      font-size: 20px;
+                      font-weight: 400;
+                    }
+                    span {
+                      font-family: "Poppins", sans-serif;
+                      color: #fff;
+                      font-size: 13px;
+                      font-weight: 400;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /// Slide Swiper Section End
+    /// <!-- Skill Section Start -->
+    .skill {
+      padding-top: 40px;
+      padding-bottom: 100px;
+      background-color: #f9faff;
+      .container {
+        height: 500px;
+        .title {
+          padding-bottom: 50px;
+          text-align: center;
+          h2 {
+            font-family: "Poppins", sans-serif;
+            color: rgb(81, 136, 238);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 60px;
+          }
+        }
+        .tabs-container {
+          width: 540px;
+          max-width: 620px;
+          min-width: 420px;
+          margin: auto;
+          .tabs {
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            a {
+              font-family: "Poppins", sans-serif;
+              color: rgb(81, 136, 238);
+              cursor: pointer;
+              padding: 12px 24px;
+              width: 120px;
+              text-align: center;
+              font-weight: bold;
+              border-radius: 18px;
+              transition: background 5s, ease color 1.5s;
+              background: linear-gradient(145deg, #ffffff, #dcdcdc);
+              &:hover {
+                background: linear-gradient(90deg, #6600ff 0%, #00cc99 100%);
+                color: #fff;
+              }
+            }
+          }
+          .content {
+            .tabcontent {
+              padding: 46px;
+              min-height: 288px;
+              display: none;
+              border-radius: 18px;
+              background: #f4f4f4;
+              box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+              p {
+                color: rgb(81, 136, 238);
+                margin-bottom: 12px;
+                &:last-child {
+                  margin-bottom: 0;
+                  .icon {
+                    padding-left: 8px;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+            .active {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    // <!-- Skill Section End -->
+    // <!-- Acordion Section Start
+
+    .acordion {
+      height: 500px;
+      // background-color: #fff;
+      background: linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
+      .container {
+        
+        h1 {
+          padding: 50px 0;
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          color: #fff;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 60px;
+        }
+        .acc-kontainer {
+          width: 100%;
+          margin: auto;
+          .content {
+            input {
+              display: none;
+              &:checked + label {
+                background-color: rgba(255, 255, 255, 0.253);
+              }
+              &::checked + label:before {
+                font-family: "FontAwesome";
+                content: "\f00d";
+                transition: 0.5s;
+              }
+              &:checked ~ .acc-body {
+                height: auto;
+                color: #fff;
+                font-size: 16px;
+                padding: 20px;
+                transition: 0.5s;
+              }
+            }
+            label {
+              cursor: pointer;
+              background-color: rgba(255, 255, 255, 0.24);
+              border-bottom: 1px solid rgba(255, 255, 255, 0);
+              display: block;
+              padding: 15px;
+              width: 100%;
+              color: #fff;
+              font-weight: 400;
+              box-sizing: border-box;
+              z-index: 100;
+              &::before {
+                font-family: "FontAwesome";
+                content: "\f067";
+                font-weight: bolder;
+                float: right;
+              }
+            }
+
+            .acc-body {
+              width: 98%;
+              width: calc(100% - 20px);
+              margin: 0 auto;
+              height: 0;
+              color: rgba(0, 0, 0, 0);
+              background-color: rgba(255, 255, 255, 0.2);
+              line-height: 28px;
+              padding: 0 20px;
+              box-sizing: border-box;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+     // <!-- Acordion Section End
+    //  <!-- Subscribe Start -->
+    .Subscribe{
+      padding: 60px 0;
+      height: 400px;
+      background-color: #fff;
+      .container{
+        padding: 30px;
+        background-color:#d7d2cc;
+        .titleSubscribe{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h3{
+            text-align: center;
+            line-height: 1.5em;
+            font-size: 36px;
+            font-weight: 100;
+            color: #fff;
+            .title{
+              font-weight: 600;
+              font-size: 36px;
+              color: #fff;
+            }
+          }
+          .text-white{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.5em;
+            color: #fff;
+          }
+        }
+.subscribeContent{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  form{
+    width: 500px;
+    position: relative;
+    input{
+      width: 100%;
+    line-height: 50px;
+    padding: 0 180px 0 25px;
+    border: none;
+    font-weight: 300;
+    border-radius: 25px;
+    background: #f9f9ff;
+    }
+    button{
+      position: absolute;
+      top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    line-height: 40px;
+    padding: 0 30px;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      #91d1ff 0%, #a387ff 100%
+    );
+    border: solid 1px #91d1ff ;
+    span{
+      color: #fff;
+      font-size: 15px;
+      line-height: 40px;
+      font-weight: 500;
+      padding-right: 10px;
+    }
+    }
+  }
+}
+
+      }
+    }
+     //  <!-- Subscribe End -->
+
+  }
+  // END MAIN
+  // <!-- Fotter Start Section -->
+  footer{
+    height: 200px;
+    background-color: #fff;
+    margin-bottom:90px ;
+    .container{
+      .footerItems{
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .footerList{
+          display: flex;
+          gap: 20px;
+          font-weight: 600;
+          a{
+            color: #777777;
+            transition: all .1s ease;
+            &:hover{
+              color: rgb(81, 136, 238);
+            }
+            }
+          }
+        }
+        .footerSocial{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          a{
+            font-size: 20px;
+            font-weight: 600;
+            color: #777777;
+            transition: all .1s ease;
+            &:hover{
+              color: rgb(81, 136, 238);
+            }
+          }
+        }
+        .footerContent{
+          display: flex;
+          justify-content: center;
+          padding: 30px 0;
+          h5{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #777777;
+            transition: all .1s ease;
+            &:hover{
+              color: rgb(81, 136, 238);
+            }
+          }
+        }
+      }
+    }
+  }
+  // <!-- Fotter End Section -->
+
+
+
+@media (max-width: 1024px) {
+  .allPage {
+    .header {
+      position: relative;
+      z-index: 1001;
+      .container {
+        .content {
+          .clickNavBars {
+            .clickNavBtn {
+              display: block;
+            }
+            .navBar {
+              display: block;
+              opacity: 0;
+              visibility: hidden;
+              .navList {
+                transition: all 0.3s ease-in-out;
+                position: absolute;
+                flex-direction: column;
+                gap: 0;
+                background-color: #fff;
+                width: 100%;
+                top: 100%;
+                left: 0;
+                padding: 5px 0;
+                .navItem {
+                  padding: 20px;
+                  transition: 0.3s all ease;
+                  border-radius: 15px;
+                  &:hover {
+                    transform: translateX(10px);
+                    background-color: #1345e6;
+                    box-shadow: 0px 7px 11px -6px rgba(0, 0, 0, 0.9);
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

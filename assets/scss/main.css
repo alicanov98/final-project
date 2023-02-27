@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #333399, #ff00cc);
+}
+body::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 200px) {
+  .allPage {
+    width: 75%;
+  }
+}
+.allPage {
+  margin: 0 auto;
+  margin-top: 96px;
+}
+.allPage .header {
+  background: #fff;
+  height: 90px;
+  box-shadow: 0px 7px 11px -6px rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgb(81, 136, 238);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
+}
+.allPage .header .container .content {
+  width: 100%;
+}
+.allPage .header .container .content .clickNavBars {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+.allPage .header .container .content .clickNavBars .logo span a {
+  color: rgb(81, 136, 238);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.allPage .header .container .content .clickNavBars .navBar {
+  display: flex;
+  z-index: 0;
+}
+.allPage .header .container .content .clickNavBars .navBar .navList {
+  gap: 35px;
+  display: flex;
+}
+.allPage .header .container .content .clickNavBars .navBar .navList .navItem a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: rgb(81, 136, 238);
+  transition: all 0.9s ease;
+}
+.allPage .header .container .content .clickNavBars .navBar .navList .navItem a:hover {
+  color: #00cc99;
+}
+.allPage .header .container .content .clickNavBars .clickNavBtn {
+  cursor: pointer;
+  display: none;
+}
+.allPage .header .container .content .clickNavBars .clickNavBtn i {
+  font-size: 24px;
+  line-height: 1.1;
+  color: rgb(81, 136, 238);
+  transition: all 0.9s ease;
+}
+.allPage .header .container .content .clickNavBars .clickNavBtn i:hover {
+  color: #00cc99;
+}
+.allPage .header .container .content .clickNavBars .clickNavBtn .fa-xmark {
+  color: rgb(81, 136, 238);
+  transition: all 0.9s ease;
+}
+.allPage .header .container .content .clickNavBars .clickNavBtn .fa-xmark:hover {
+  color: #00cc99;
+}
+.allPage .header .container .content .clickNavBars .active {
+  display: block;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.allPage .header .container .content .clickDropdown i {
+  color: rgb(81, 136, 238);
+  font-size: 24px;
+  line-height: 1.5;
+}
+.allPage main .aboutMe {
+  background-image: url(../image/fon.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+.allPage main .aboutMe .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.allPage main .aboutMe .container .aboutLeft h3 {
+  color: rgb(81, 136, 238);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.allPage main .aboutMe .container .aboutLeft h1 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(81, 136, 238);
+  margin: 20px 0;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.allPage main .aboutMe .container .aboutLeft h5 {
+  color: rgb(81, 136, 238);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.allPage main .aboutMe .container .aboutLeft .socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  gap: 15px;
+}
+.allPage main .aboutMe .container .aboutLeft .socialIcon a {
+  font-size: 20px;
+  transition: all 0.9s ease;
+  color: rgb(81, 136, 238);
+  transition: all 0.4s ease;
+}
+.allPage main .aboutMe .container .aboutLeft .socialIcon a:hover {
+  background: linear-gradient(90deg, #6600ff 0%, #00cc99 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.allPage main .aboutMe .container .aboutLeft .aboutBtn {
+  display: inline-block;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  color: #fff;
+  letter-spacing: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 38px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: all 0.6s ease-in-out;
+}
+.allPage main .aboutMe .container .aboutLeft .aboutBtn:hover {
+  background-position: right center;
+  color: #fff;
+}
+.allPage main .aboutMe .container .aboutRight {
+  margin-top: 120px;
+  margin-left: 100px;
+}
+.allPage main .aboutMe .container .aboutRight img {
+  width: 300px;
+  height: 300px;
+  border-radius: 35px;
+}
+.allPage main .swiperSlide .swiperContent {
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.allPage main .swiperSlide .swiperContent .container .title {
+  text-align: center;
+  padding: 100px 0;
+}
+.allPage main .swiperSlide .swiperContent .container .title h2 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(81, 136, 238);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../image/banner.png.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper .swiper-wrapper .swiper-slide .cartContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper .swiper-wrapper .swiper-slide .cartContent p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 34px 0;
+  font-family: "Poppins", sans-serif;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper .swiper-wrapper .swiper-slide .cartContent .author h3 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.allPage main .swiperSlide .swiperContent .container .mySwiper .swiper-wrapper .swiper-slide .cartContent .author span {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+.allPage main .skill {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: #f9faff;
+}
+.allPage main .skill .container {
+  height: 500px;
+}
+.allPage main .skill .container .title {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.allPage main .skill .container .title h2 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(81, 136, 238);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.allPage main .skill .container .tabs-container {
+  width: 540px;
+  max-width: 620px;
+  min-width: 420px;
+  margin: auto;
+}
+.allPage main .skill .container .tabs-container .tabs {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.allPage main .skill .container .tabs-container .tabs a {
+  font-family: "Poppins", sans-serif;
+  color: rgb(81, 136, 238);
+  cursor: pointer;
+  padding: 12px 24px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 18px;
+  transition: background 5s, ease color 1.5s;
+  background: linear-gradient(145deg, #ffffff, #dcdcdc);
+}
+.allPage main .skill .container .tabs-container .tabs a:hover {
+  background: linear-gradient(90deg, #6600ff 0%, #00cc99 100%);
+  color: #fff;
+}
+.allPage main .skill .container .tabs-container .content .tabcontent {
+  padding: 46px;
+  min-height: 288px;
+  display: none;
+  border-radius: 18px;
+  background: #f4f4f4;
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+}
+.allPage main .skill .container .tabs-container .content .tabcontent p {
+  color: rgb(81, 136, 238);
+  margin-bottom: 12px;
+}
+.allPage main .skill .container .tabs-container .content .tabcontent p:last-child {
+  margin-bottom: 0;
+}
+.allPage main .skill .container .tabs-container .content .tabcontent p:last-child .icon {
+  padding-left: 8px;
+  font-size: 16px;
+}
+.allPage main .skill .container .tabs-container .content .active {
+  display: block;
+}
+.allPage main .acordion {
+  height: 500px;
+  background: linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
+}
+.allPage main .acordion .container h1 {
+  padding: 50px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.allPage main .acordion .container .acc-kontainer {
+  width: 100%;
+  margin: auto;
+}
+.allPage main .acordion .container .acc-kontainer .content input {
+  display: none;
+}
+.allPage main .acordion .container .acc-kontainer .content input:checked + label {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+.allPage main .acordion .container .acc-kontainer .content input::checked + label:before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  transition: 0.5s;
+}
+.allPage main .acordion .container .acc-kontainer .content input:checked ~ .acc-body {
+  height: auto;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.allPage main .acordion .container .acc-kontainer .content label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.allPage main .acordion .container .acc-kontainer .content label::before {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-weight: bolder;
+  float: right;
+}
+.allPage main .acordion .container .acc-kontainer .content .acc-body {
+  width: 98%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.allPage main .Subscribe {
+  padding: 60px 0;
+  height: 400px;
+  background-color: #fff;
+}
+.allPage main .Subscribe .container {
+  padding: 30px;
+  background-color: #d7d2cc;
+}
+.allPage main .Subscribe .container .titleSubscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.allPage main .Subscribe .container .titleSubscribe h3 {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+}
+.allPage main .Subscribe .container .titleSubscribe h3 .title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff;
+}
+.allPage main .Subscribe .container .titleSubscribe .text-white {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #fff;
+}
+.allPage main .Subscribe .container .subscribeContent {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.allPage main .Subscribe .container .subscribeContent form {
+  width: 500px;
+  position: relative;
+}
+.allPage main .Subscribe .container .subscribeContent form input {
+  width: 100%;
+  line-height: 50px;
+  padding: 0 180px 0 25px;
+  border: none;
+  font-weight: 300;
+  border-radius: 25px;
+  background: #f9f9ff;
+}
+.allPage main .Subscribe .container .subscribeContent form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  line-height: 40px;
+  padding: 0 30px;
+  border-radius: 20px;
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  background: linear-gradient(to right, #91d1ff 0%, #a387ff 100%);
+  border: solid 1px #91d1ff;
+}
+.allPage main .Subscribe .container .subscribeContent form button span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.allPage footer {
+  height: 200px;
+  background-color: #fff;
+  margin-bottom: 90px;
+}
+.allPage footer .container .footerItems {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.allPage footer .container .footerItems .footerList {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+}
+.allPage footer .container .footerItems .footerList a {
+  color: #777777;
+  transition: all 0.1s ease;
+}
+.allPage footer .container .footerItems .footerList a:hover {
+  color: rgb(81, 136, 238);
+}
+.allPage footer .container .footerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.allPage footer .container .footerSocial a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #777777;
+  transition: all 0.1s ease;
+}
+.allPage footer .container .footerSocial a:hover {
+  color: rgb(81, 136, 238);
+}
+.allPage footer .container .footerContent {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.allPage footer .container .footerContent h5 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Poppins", sans-serif;
+  color: #777777;
+  transition: all 0.1s ease;
+}
+.allPage footer .container .footerContent h5:hover {
+  color: rgb(81, 136, 238);
+}
+
+@media (max-width: 1024px) {
+  .allPage .header {
+    position: relative;
+    z-index: 1001;
+  }
+  .allPage .header .container .content .clickNavBars .clickNavBtn {
+    display: block;
+  }
+  .allPage .header .container .content .clickNavBars .navBar {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .allPage .header .container .content .clickNavBars .navBar .navList {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    background-color: #fff;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 5px 0;
+  }
+  .allPage .header .container .content .clickNavBars .navBar .navList .navItem {
+    padding: 20px;
+    transition: 0.3s all ease;
+    border-radius: 15px;
+  }
+  .allPage .header .container .content .clickNavBars .navBar .navList .navItem:hover {
+    transform: translateX(10px);
+    background-color: #1345e6;
+    box-shadow: 0px 7px 11px -6px rgba(0, 0, 0, 0.9);
+  }
+  .allPage .header .container .content .clickNavBars .navBar .navList .navItem:hover a {
+    color: #fff;
+  }
+}/*# sourceMappingURL=main.css.map */

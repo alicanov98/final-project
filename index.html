@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <title>Final</title>
+  </head>
+  <body>
+    <div class="allPage">
+      <!-- HEADER START -->
+      <header class="header">
+        <div class="container">
+          <div class="content">
+            <div class="clickNavBars">
+              <div class="logo">
+                <span><a href="./index.html">MyWeb</a></span>
+              </div>
+
+              <nav class="navBar">
+                <ul class="navList">
+                  <li class="navItem">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="navItem">
+                    <a href="#">About me</a>
+                  </li>
+                  <li class="navItem"><a href="#">Skills</a></li>
+                  <li class="navItem"><a href="#">Contact us</a></li>
+                </ul>
+              </nav>
+              <div class="clickNavBtn" onclick="openNav()">
+                <i class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- START MAIN  -->
+      <main>
+        <!-- START ABOUT ME SECTION -->
+        <section class="aboutMe">
+          <div class="container">
+            <div class="aboutLeft">
+              <h3>HEY THERE !</h3>
+              <h1>I AM MALIK</h1>
+              <h5>CREATIVE ART DIRECTOR & DESIGNER</h5>
+              <div class="socialIcon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="#" class="aboutBtn">
+                <span>See My Work</span>
+              </a>
+            </div>
+            <div class="aboutRight">
+              <img src="./assets/image/my.jpg" alt="foto" class="rightImg" />
+            </div>
+          </div>
+        </section>
+        <!-- END ABOUT ME SECTION -->
+        <!-- Slide Swiper Section START-->
+        <section class="swiperSlide">
+          <div class="swiperContent">
+            <div class="container">
+              <div class="title"><h2>About me</h2></div>
+              <!-- Slider main container -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="cartContent">
+                      <div class="imgSlide">
+                        <img src="./assets/image/quote.svg" alt="photo" />
+                      </div>
+                      <p>
+                        Donec imperdiet congue orci consequat mattis. Donec
+                        rutrum porttitor sollicitudin.
+                        <br />
+                        Pellentesque id dolor tempor sapien feugiat ultrices nec
+                        sed neque.
+                        <br />
+                        Fusce ac mattis nulla. Morbi eget ornare dui.
+                      </p>
+                      <div class="author">
+                        <div class="thumb">
+                          <img
+                            src="./assets/image/thumb.png.webp"
+                            alt="photo"
+                          />
+                        </div>
+                        <h3>Malik Alijanov</h3>
+                        <span>Business Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Slide Swiper Section End -->
+        <!-- Skill Section Start -->
+        <section class="skill">
+          <div class="container">
+            <div class="title"><h2>SKILL</h2></div>
+            <div id="tabs" class="tabs-container">
+              <div class="tabs">
+                <a id="tab1" data-tab="1" class="tab active">HTML</a>
+                <a id="tab2" data-tab="2" class="tab">SCSS</a>
+                <a id="tab3" data-tab="3" class="tab">JS</a>
+                <a id="tab4" data-tab="4" class="tab">React</a>
+              </div>
+
+              <div class="content">
+                <div id="tabcontent1" data-tab="1" class="tabcontent active">
+                  <p>
+                    The first publicly available description of HTML was a
+                    document called "HTML Tags", first mentioned on the Internet
+                    by Tim Berners-Lee in late 1991.
+                  </p>
+                  <p>
+                    It describes 18 elements comprising the initial, relatively
+                    simple design of HTML.
+                  </p>
+                  <p>Eleven of these elements still exist in HTML 4.</p>
+                  <p class="read-more-link">
+                    <a href="#" target="_blank"
+                      >Learn more<span class="icon">➡️</span></a
+                    >
+                  </p>
+                </div>
+                <div id="tabcontent2" data-tab="2" class="tabcontent">
+                  <p>
+                    Sass was initially designed by Hampton Catlin and developed
+                    by Natalie Weizenbaum.
+                  </p>
+                  <p>After its initial versions,</p>
+                  <p>
+                    Weizenbaum and Chris Eppstein have continued to extend Sass
+                    with SassScript, a scripting language used in Sass files.
+                  </p>
+                  <p class="read-more-link">
+                    <a href="#" target="_blank"
+                      >Learn more<span class="icon">➡️</span></a
+                    >
+                  </p>
+                </div>
+                <div id="tabcontent3" data-tab="3" class="tabcontent">
+                  <p>
+                    The first popular web browser with a graphical user
+                    interface, Mosaic, was released in 1993.
+                  </p>
+                  <p>
+                    Accessible to non-technical people, it played a prominent
+                    role in the rapid growth of the nascent World Wide Web.
+                  </p>
+                  <p>
+                    The lead developers of Mosaic then founded the Netscape
+                    corporation, which released a more polished browser,
+                    Netscape Navigator, in 1994.
+                  </p>
+                  <p class="read-more-link">
+                    <a href="#" target="_blank"
+                      >Learn more<span class="icon">➡️</span></a
+                    >
+                  </p>
+                </div>
+                <div id="tabcontent4" data-tab="4" class="tabcontent">
+                  <p>
+                    React (also known as React.js or ReactJS) is a free and
+                    open-source front-end JavaScript library for building user
+                    interfaces based on UI components.
+                  </p>
+                  <p>
+                    It is maintained by Meta (formerly Facebook) and a community
+                    of individual developers and companies.
+                  </p>
+                  <p>
+                    React can be used as a base in the development of
+                    single-page, mobile, or server-rendered applications with
+                    frameworks like Next.js
+                  </p>
+                  <p class="read-more-link">
+                    <a href="#" target="_blank"
+                      >Learn more<span class="icon">➡️</span></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Skill Section End -->
+        <!-- Acordion Section Start -->
+        <section class="acordion">
+          <div class="container">
+            <h1>ACCORDION</h1>
+            <div class="acc-kontainer">
+              <div class="content">
+                <input type="radio" name="acc" id="acc1" checked />
+                <label for="acc1"
+                  ><i class="fa fa-map-marker"></i> My name?</label
+                >
+                <div class="acc-body">Hi, You can call me Malik.</div>
+              </div>
+              <div class="content">
+                <input type="radio" name="acc" id="acc2" />
+                <label for="acc2"
+                  ><i class="fa fa-heart"></i> What am I interesting for?</label
+                >
+                <div class="acc-body">
+                  All the thing about Technology! Informatic technology
+                  especially.
+                </div>
+              </div>
+              <div class="content">
+                <input type="radio" name="acc" id="acc3" />
+                <label for="acc3"
+                  ><i class="fa fa-music"></i> What is my hobby?</label
+                >
+                <div class="acc-body">
+                  i love music <i class="fa fa-headphones"></i>, watching movie
+                  <i class="fa fa-film"></i>, Designing maybe
+                  <i class="fa fa-code"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Acordion Section End -->
+        <!-- Subscribe  Start -->
+        <section class="Subscribe">
+          <div class="container">
+            <div class="titleSubscribe">
+              <h3>
+                <span class="title">SUBSCRIBE</span>
+                <br />
+                FOR OUR NEWSLETTER
+              </h3>
+              <span class="text-white">We won’t send any kind of spam </span>
+            </div>
+            <div class="subscribeContent">
+              <form target="_blank">
+                <input type="text" placeholder="Email adress" />
+                <button>
+                  <span>Get Started</span>
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Subscribe End -->
+      </main>
+      <!-- END MAIN -->
+      <!-- Fotter Start Section -->
+      <footer>
+        <div class="container">
+          <div class="footerItems">
+            <ul class="footerList">
+              <li class="footerListItem"><a href="#">HOME</a></li>
+              <li class="footerListItem"><a href="#">GENERIC</a></li>
+              <li class="footerListItem"><a href="#">ELEMENTS</a></li>
+            </ul>
+          </div>
+          <div class="footerSocial">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="footerContent">
+            <h5>Presented by Malik Alijanov © 2023</h5>
+          </div>
+        </div>
+      </footer>
+      <!-- Fotter End Section -->
+    </div>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+    <!-- JS -->
+    <!-- Icons from FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/4679a6cec2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icons from FontAwesome -->
+    <!-- -------------- -->
+  </body>
+</html>
